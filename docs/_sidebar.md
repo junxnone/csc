@@ -1,6 +1,4 @@
-- Install
-- Desktop
-- Tools
-- Samba
-- Docker
-- Proxy
+- Stanford CS231n 计算机视觉 - 李飞飞
+- 吴恩达机器学习课程
+- 吴恩达深度学习课程
+- CMU 15-418 **Parallel Computer Architecture and Programming** 
