@@ -1,1 +1,1 @@
-# Linux-wiki
+# CS Course notes
