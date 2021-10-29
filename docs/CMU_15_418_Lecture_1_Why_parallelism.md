@@ -1,8 +1,8 @@
 ---
 Title | CMU 15-418 Lecture 1 Why parallelism
 -- | --
-Create Date | `2021-09-26T03:17:30Z`
-Update Date | `2021-09-26T03:17:30Z`
+Create Date | `2021-09-26T02:51:50Z`
+Update Date | `2021-10-29T10:07:37Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/3)
 
 ---
@@ -29,10 +29,10 @@ Edit link | [here](https://github.com/junxnone/csc/issues/3)
 
 ## History of Parallel Computing
 
-- 1970s 超级计算机用于科学计算
-- 1990s 数据库/Web服务/交易
+- 1970s 用于超级计算机进行科学计算
+- 1990s 用于数据库/Web服务/交易
 - 2004 CPU 频率升级到达技术瓶颈
-- 2019 云计算
+- 2019 用于云计算
 
 
 [Microprocessor Trend Data](https://github.com/karlrupp/microprocessor-trend-data) |
