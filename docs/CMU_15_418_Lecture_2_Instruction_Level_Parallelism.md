@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
 Create Date | `2021-09-26T03:27:07Z`
-Update Date | `2021-10-30T04:21:13Z`
+Update Date | `2021-10-30T05:29:52Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
@@ -49,7 +49,7 @@ VPU | 神经网络
 
 
 ![InkedFoxitReader_BXqXJmKJV8_LI](https://user-images.githubusercontent.com/2216970/134797100-9067690d-c506-4d52-a52b-1b2a8e996499.jpg) | Simple CPU Model
--- | --
+-- | :--
 ![Inkedchrome_k49UtilsYB_LI](https://user-images.githubusercontent.com/2216970/134641857-12563821-6c02-4628-986e-d656c8f76b82.jpg) | Pipelining<br> 4X Speedup
 ![Inkedchrome_lKvXLJsrqG_LI](https://user-images.githubusercontent.com/2216970/134646854-ac0014f9-d3e9-4263-a6a2-a0c652f192b3.jpg) | **Data hazards** 当后一条指令需要用到前一条指令的寄存器时会填充 `NOP` 指令, 以等到前一条指令 `commit` <br> **解决方案**: Forwarding data(部分解决)
 ![InkedFoxitReader_VtCwFCBeQv_LI](https://user-images.githubusercontent.com/2216970/134799251-a9966841-0923-4adf-a5e7-5cfa216cd237.jpg) | Fetch 到错误的指令, 需要重新 Fetch
