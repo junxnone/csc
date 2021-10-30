@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 1 Why parallelism
 -- | --
 Create Date | `2021-09-26T02:51:50Z`
-Update Date | `2021-10-30T03:25:27Z`
+Update Date | `2021-10-30T04:10:50Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/3)
 
 ---
@@ -20,6 +20,7 @@ Edit link | [here](https://github.com/junxnone/csc/issues/3)
   - ...
 - **CPU 瓶颈** - `Power Density Wall`
   - 单处理器的性能到达瓶颈, 提升很慢
+
 
 ## Term
 
@@ -56,3 +57,14 @@ Application Programming | - Low-level, processor-centric model<br>- Programmer m
 - CUDA programming on NVIDIA GPUs
 - Parallel Programming via a Shared-Address Space Model
 - Parallel Programming via a Message Passing Model
+
+
+## Metrics
+- Performance - 性能
+  - 2004 年之前
+  - `speedup = 执行时间(1 Processor) / 执行时间(N Processors)`
+  - 影响 speedup 的因素 - 通信(数据同步)/imbalance(CPU 任务分配不均)
+- Efficiency - 效率
+  - 2004 年之后
+  - 芯片面积方面 - 最大化 `Performance per area`
+  - 功率消耗方面 - 最大化 `Performance per Watt`
