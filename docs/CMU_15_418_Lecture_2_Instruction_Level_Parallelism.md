@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
 Create Date | `2021-09-26T03:27:07Z`
-Update Date | `2021-10-30T05:49:36Z`
+Update Date | `2021-10-30T05:53:10Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
@@ -43,22 +43,28 @@ VPU | 神经网络
 
 
 
-- **Pipeline Flushes:** Fetch 到错误的指令，需要重新 Fetch 新的指令
-  - Pipeline flushes are expensive in deep pipelines
+
 
 ![image](https://user-images.githubusercontent.com/2216970/139521736-2fa7e099-9653-4f7c-82fd-40ea97ce62f9.png) | ![Inkedchrome_k49UtilsYB_LI](https://user-images.githubusercontent.com/2216970/134641857-12563821-6c02-4628-986e-d656c8f76b82.jpg) 
 -- | --
 
 #### Data Hazards
 - **Data hazards:** 并行需要是独立的任务, 而许多指令之间并不独立(寄存器读写依赖)
-  - **examp:** 前一条指令要写 `R3`, 后一条指令执行时要读 `R3`, 后一条指令执行时,前一条指令还没有 `commit`
+  - **example:** 前一条指令要写 `R3`, 后一条指令执行时要读 `R3`, 后一条指令执行时,前一条指令还没有 `commit`
 
 
 ![image](https://user-images.githubusercontent.com/2216970/139521888-154069d7-a378-4e5a-821c-632ff910dc2f.png) | ![Inkedchrome_lKvXLJsrqG_LI](https://user-images.githubusercontent.com/2216970/134646854-ac0014f9-d3e9-4263-a6a2-a0c652f192b3.jpg)
 -- | --
 
-- **Forwarding data:** CPU在一个时钟周期内，把一个单元的输出值内容拷贝到另一个单元的输入值中
+- 解决方案: **Forwarding data** - CPU在一个时钟周期内，把一个单元的输出值内容拷贝到另一个单元的输入值中
   - Forwarding is expensive in deep pipelines
+
+![image](https://user-images.githubusercontent.com/2216970/139522099-a4c262e8-e8f1-47d4-a01a-0c5f46cc2787.png) | ![image](https://user-images.githubusercontent.com/2216970/139522125-b8429f53-0b3d-4d6f-9c32-f7c5c5220e3c.png)
+-- | --
+
+####  Pipeline Flushes
+- **Pipeline Flushes:** Fetch 到错误的指令，需要重新 Fetch 新的指令
+  - Pipeline flushes are expensive in deep pipelines
 
 
 
