@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 1 Why parallelism
 -- | --
 Create Date | `2021-09-26T02:51:50Z`
-Update Date | `2021-10-29T10:07:37Z`
+Update Date | `2021-10-30T03:24:33Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/3)
 
 ---
@@ -18,7 +18,7 @@ Edit link | [here](https://github.com/junxnone/csc/issues/3)
   - 10Mhz/200Mhz --> 3GHz
   - ILP: Superscalar & OoO
   - ...
-- CPU 瓶颈
+- CPU 瓶颈 - `Power Density Wall`
   - 单处理器的性能到达瓶颈, 提升很慢
 
 ## Term
