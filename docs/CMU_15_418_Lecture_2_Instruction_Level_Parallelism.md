@@ -1,8 +1,8 @@
 ---
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
-Create Date | `2021-09-28T07:29:04Z`
-Update Date | `2021-09-28T07:29:04Z`
+Create Date | `2021-09-26T03:27:07Z`
+Update Date | `2021-10-30T04:13:44Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
@@ -14,6 +14,7 @@ Edit link | [here](https://github.com/junxnone/csc/issues/4)
   - Out of order execution - 动态调度执行指令
   - Speculation - 预测下条指令
 
+## 各种处理器
 
 Processors | 用途 | 并行方法 | 调度 | Cores | Hardware | 编程困难度
 -- | -- | -- | -- | -- | -- | --
@@ -23,7 +24,7 @@ FPGA | 信号处理/神经网络/...
 VPU | 神经网络
 
 
-### CPU ILP - `instruction-level parallelism`
+## CPU ILP - `instruction-level parallelism`
 
 - **Simple CPU Model**
   - **Fetch** – get the next instruction from memory
