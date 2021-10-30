@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
 Create Date | `2021-09-26T03:27:07Z`
-Update Date | `2021-10-30T05:29:52Z`
+Update Date | `2021-10-30T05:39:38Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
@@ -26,18 +26,29 @@ VPU | 神经网络
 
 ## CPU ILP - `instruction-level parallelism`
 
-- **Simple CPU Model**
-  - **Fetch** – get the next instruction from memory
-  - **Decode** – figure out what to do & read inputs
-  - **Execute** – perform the necessary operations
-  - **Commit** – write the results back to registers / memory
-- **Pipelining**
+### Simple CPU Model
+
+- **Fetch** – get the next instruction from memory
+- **Decode** – figure out what to do & read inputs
+- **Execute** – perform the necessary operations
+- **Commit** – write the results back to registers / memory
+
+![image](https://user-images.githubusercontent.com/2216970/139521653-abbc0bdb-5d4e-4b6e-8f18-680103b26877.png) |  ![InkedFoxitReader_BXqXJmKJV8_LI](https://user-images.githubusercontent.com/2216970/134797100-9067690d-c506-4d52-a52b-1b2a8e996499.jpg)
+-- | --
+
+### **Pipelining**
   - 𝑁-stage pipeline gives up to 𝑁 × speedup
 - **Data hazards:** 并行需要是独立的任务, 而许多指令之间并不独立(寄存器读写依赖)
   - **Forwarding data:** CPU在一个时钟周期内，把一个单元的输出值内容拷贝到另一个单元的输入值中
   - Forwarding is expensive in deep pipelines
 - **Pipeline Flushes:** Fetch 到错误的指令，需要重新 Fetch 新的指令
   - Pipeline flushes are expensive in deep pipelines
+- 4X Speedup
+
+![image](https://user-images.githubusercontent.com/2216970/139521736-2fa7e099-9653-4f7c-82fd-40ea97ce62f9.png) | ![Inkedchrome_k49UtilsYB_LI](https://user-images.githubusercontent.com/2216970/134641857-12563821-6c02-4628-986e-d656c8f76b82.jpg) 
+-- | --
+
+
 - **Speculation:** CPU 猜测下一条要执行的指令 - 如果猜错, `rolling back`
 - **Dataflow:** 根据寄存器依赖并行执行
   - Critical path limits maximum performance
