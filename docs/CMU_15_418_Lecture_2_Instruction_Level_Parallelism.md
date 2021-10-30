@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
 Create Date | `2021-09-26T03:27:07Z`
-Update Date | `2021-10-30T04:13:44Z`
+Update Date | `2021-10-30T04:20:18Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
@@ -41,7 +41,7 @@ VPU | 神经网络
 - **Speculation:** CPU 猜测下一条要执行的指令
 - **Dataflow:** 根据寄存器依赖并行执行
   - Critical path limits maximum performance
-- **Out-Of-Order(OoO):** 乱序执行
+- **Out-Of-Order(OoO):** 乱序执行 - `执行已经准备好的指令`
 - **Structural hazard**: 浮点数/整数/Memory 特殊硬件资源有限
 - **结论:** 
   - ILP & Pipeline 扩展性不好/动态调度 & OoO代价比较高
