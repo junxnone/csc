@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
 Create Date | `2021-09-26T03:27:07Z`
-Update Date | `2021-10-30T04:20:18Z`
+Update Date | `2021-10-30T04:21:13Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
@@ -38,7 +38,7 @@ VPU | 神经网络
   - Forwarding is expensive in deep pipelines
 - **Pipeline Flushes:** Fetch 到错误的指令，需要重新 Fetch 新的指令
   - Pipeline flushes are expensive in deep pipelines
-- **Speculation:** CPU 猜测下一条要执行的指令
+- **Speculation:** CPU 猜测下一条要执行的指令 - 如果猜错, `rolling back`
 - **Dataflow:** 根据寄存器依赖并行执行
   - Critical path limits maximum performance
 - **Out-Of-Order(OoO):** 乱序执行 - `执行已经准备好的指令`
