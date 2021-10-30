@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
 Create Date | `2021-09-26T03:27:07Z`
-Update Date | `2021-10-30T06:10:08Z`
+Update Date | `2021-10-30T06:51:26Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
@@ -13,6 +13,8 @@ Edit link | [here](https://github.com/junxnone/csc/issues/4)
   - Pipelining & Superscalar - 同时执行多条指令
   - Out of order execution - 动态调度执行指令
   - Speculation - 预测下条指令
+- in-order/out-of-order
+
 
 ## 各种处理器
 
@@ -37,7 +39,7 @@ VPU | 神经网络
 -- | --
 
 ### **Pipelining**
-- 𝑁-stage pipeline gives up to 𝑁 × speedup
+- 𝑁-stage pipeline gives up to 𝑁 × speedup(N = 15 是个临界点)
 - `Fetch/Decode/Execute/Commit` - 4X Speedup
 - 一些限制 Pipeling 并行的因素 
   - **Data Hazards**
@@ -64,7 +66,7 @@ VPU | 神经网络
 
 
 
-### Control Hazards & Speculation
+#### Control Hazards & Speculation
 - **Control Hazards** - 按照 `Static instruction sequence` 预取指令, 预取到错误指令
   - **example:** 前一条指令执行完跳转了, 提前 Fetch 的指令是错误的
 
@@ -75,18 +77,34 @@ VPU | 神经网络
   - > 95% 猜对？？
 
 
-- **Dataflow:** 根据寄存器依赖并行执行
-  - Critical path limits maximum performance
+### Out-of-Order
 - **Out-Of-Order(OoO):** 乱序执行 - `执行已经准备好的指令`
+- **Dataflow:** 根据寄存器依赖并行执行
+  - **True dependence:** `read-after-write`
+- **Latency-bound** - Critical path limits maximum performance
+  - **Critical Path** - 迭代中最长路径
+
+![image](https://user-images.githubusercontent.com/2216970/135019570-42f01b5a-b3e9-4319-85ac-6a8848183d60.png) | ![image](https://user-images.githubusercontent.com/2216970/139523505-63a801e0-bf3d-473a-948e-94dc75a588bf.png)
+-- | --
+
+![image](https://user-images.githubusercontent.com/2216970/135018839-ab2c87e6-3183-435d-ae35-b14d0926b037.png) | ![InkedFoxitReader_lUNIOkZCSc_LI](https://user-images.githubusercontent.com/2216970/135020663-6b36341d-bc37-4710-ae94-2a324e7605b5.jpg)
+-- | --
+
+> - ldr, mul execute in 2 cycles
+> - cmp, bne execute in 1 cycle
+> - mla executes in 3 cycles
+> - 每个循环执行 3 cycles, 一共 5 条指令 
+> - IPC(Instructions per cycle) `= 5/3 =1.66... > 1`(perfect pipeling)
+
+
 - **Structural hazard**: 浮点数/整数/Memory 特殊硬件资源有限
 - **结论:** 
   - ILP & Pipeline 扩展性不好/动态调度 & OoO代价比较高
   - Multicore 更 Efficient
 
 
-![image](https://user-images.githubusercontent.com/2216970/135018839-ab2c87e6-3183-435d-ae35-b14d0926b037.png) | Dataflow
-![image](https://user-images.githubusercontent.com/2216970/135019570-42f01b5a-b3e9-4319-85ac-6a8848183d60.png) | OoO
-![InkedFoxitReader_lUNIOkZCSc_LI](https://user-images.githubusercontent.com/2216970/135020663-6b36341d-bc37-4710-ae94-2a324e7605b5.jpg) | OoO 
+
+ | OoO 
 ![InkedFoxitReader_K5l8eERM5G_LI](https://user-images.githubusercontent.com/2216970/135027900-51413562-821e-4735-83a7-a62ad350430b.jpg) | Structural Hazards
 
 
