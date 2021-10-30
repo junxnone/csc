@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
 Create Date | `2021-09-26T03:27:07Z`
-Update Date | `2021-10-30T06:51:26Z`
+Update Date | `2021-10-30T07:20:22Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
@@ -81,8 +81,10 @@ VPU | 神经网络
 - **Out-Of-Order(OoO):** 乱序执行 - `执行已经准备好的指令`
 - **Dataflow:** 根据寄存器依赖并行执行
   - **True dependence:** `read-after-write`
-- **Latency-bound** - Critical path limits maximum performance
-  - **Critical Path** - 迭代中最长路径
+- **Latency Bound** - `Critical Path` - 迭代中最长路径
+- **Throughput Bound** - `Execution Unit 数量(并行执行指令的个数)/Structural hazards`
+- Out-of-Order 比 In-Order 对好代码更少限制
+
 
 ![image](https://user-images.githubusercontent.com/2216970/135019570-42f01b5a-b3e9-4319-85ac-6a8848183d60.png) | ![image](https://user-images.githubusercontent.com/2216970/139523505-63a801e0-bf3d-473a-948e-94dc75a588bf.png)
 -- | --
@@ -97,15 +99,21 @@ VPU | 神经网络
 > - IPC(Instructions per cycle) `= 5/3 =1.66... > 1`(perfect pipeling)
 
 
+#### Structural hazard
 - **Structural hazard**: 浮点数/整数/Memory 特殊硬件资源有限
-- **结论:** 
-  - ILP & Pipeline 扩展性不好/动态调度 & OoO代价比较高
-  - Multicore 更 Efficient
+
+![InkedFoxitReader_K5l8eERM5G_LI](https://user-images.githubusercontent.com/2216970/135027900-51413562-821e-4735-83a7-a62ad350430b.jpg) 
 
 
 
- | OoO 
-![InkedFoxitReader_K5l8eERM5G_LI](https://user-images.githubusercontent.com/2216970/135027900-51413562-821e-4735-83a7-a62ad350430b.jpg) | Structural Hazards
+## Summary
+
+- ILP & Pipeline 扩展性不好/动态调度 & OoO 更复杂/代价更高
+- 并行指令是否独立需要 O(w<sup>2</sup>) 的比较,  W= `issue width of processor`
+- Multicore 更 Efficient
+
+![image](https://user-images.githubusercontent.com/2216970/139524023-a1d0aa75-dbbb-45f8-84c6-ac9b12a5c62a.png)
+
 
 
 
