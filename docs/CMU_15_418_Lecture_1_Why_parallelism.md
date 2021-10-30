@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 1 Why parallelism
 -- | --
 Create Date | `2021-09-26T02:51:50Z`
-Update Date | `2021-10-30T03:24:33Z`
+Update Date | `2021-10-30T03:25:27Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/3)
 
 ---
@@ -12,13 +12,13 @@ Edit link | [here](https://github.com/junxnone/csc/issues/3)
 
 # Brief
 - **并行计算发展史:** `多处理器的计算机` --> `云计算`
-- 处理器性能发展史
+- **处理器性能发展史**
   - 4/8/16/32 --> 64 bit
   - 3.5 CPI --> 1.1 CPI
   - 10Mhz/200Mhz --> 3GHz
   - ILP: Superscalar & OoO
   - ...
-- CPU 瓶颈 - `Power Density Wall`
+- **CPU 瓶颈** - `Power Density Wall`
   - 单处理器的性能到达瓶颈, 提升很慢
 
 ## Term
