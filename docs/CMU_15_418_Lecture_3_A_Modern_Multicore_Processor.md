@@ -2,14 +2,15 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-10-31T05:23:02Z`
+Update Date | `2021-10-31T05:27:53Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
 # Brief
 - Multi-Core
 - SIMD
-- 
+- Hyperthreading
+- Memory
 
 ## Multi-Core
 - Thread-level
@@ -42,15 +43,21 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 ## Hyperthreading
 - Simultaneous Multi-Threading - **Hyperthreading** - 超线程
   - Single core does the work of multiple cores 
+- `in-order` 部分独立, `Out-of-Order` 部分共享
+- 对单线程性能无提升，多线程性能有可能提升
+
 
 ![image](https://user-images.githubusercontent.com/2216970/139569166-44734064-21d2-4525-9440-e51d1101746f.png) | ![image](https://user-images.githubusercontent.com/2216970/135049677-8ba6e874-d733-4c64-8632-4a0f896f1790.png)  
 -- | --
 
+## Memory
+- Latency(cycles/nsec) - `读取延迟`
+- Bandwidth (GB/s) - `读取最大速度`
+
 
 - Interleaved multi-threading
 - Memory
-  - Latency(cycles/nsec)
-  - Bandwidth (GB/s)
+
 - **Stalls:** 运行下条指令时因为依赖不能运行
   - **Caches reduces stalls** 可以降低 memory access latency
   - **Prefetching reduces stalls:** Prefetching data into caches(prefetching 错误的话也会导致 performance 下降)
