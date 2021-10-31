@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-10-31T04:54:12Z`
+Update Date | `2021-10-31T04:54:39Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
@@ -17,7 +17,7 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 
 ![image](https://user-images.githubusercontent.com/2216970/139568350-7b1d388a-7b0a-4c78-8979-dc7b18d85b8e.png)| ![image](https://user-images.githubusercontent.com/2216970/139568205-c5e17a32-8edc-4a08-b439-60d2fd63ab02.png)
-`-- | --
+-- | --
 
 ## SIMD
 - **SIMD Precessing**(Vector Program/Computing)
