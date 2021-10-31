@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-10-31T04:54:39Z`
+Update Date | `2021-10-31T04:59:13Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
@@ -30,6 +30,12 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 ![image](https://user-images.githubusercontent.com/2216970/139568239-41126d20-e497-43d6-9b49-f16db9d6f4db.png) | ![image](https://user-images.githubusercontent.com/2216970/139568266-f0a4f79e-06f6-40e5-a309-3cb2410216aa.png)
 -- | --
 
+### SIMD Conditional execution
+- 当执行代码段存在条件判断时，不同的分支执行不同的指令, 会有一部分时间浪费掉
+
+![image](https://user-images.githubusercontent.com/2216970/135046400-d7da3152-78f7-4709-8ebd-075b66209c29.png)
+
+
 
 - Simultaneous Multi-Threading - **Hyperthreading**
   - Single core does the work of multiple cores 
@@ -45,8 +51,8 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 > prefetching, multi-threading is a latency hiding, not a latency reducing technique
 
-![image](https://user-images.githubusercontent.com/2216970/135046400-d7da3152-78f7-4709-8ebd-075b66209c29.png) | SMD<br>Conditional execution<br>Not all ALUs  do useful work
--- | --
+
+
 ![image](https://user-images.githubusercontent.com/2216970/135049677-8ba6e874-d733-4c64-8632-4a0f896f1790.png) | Hyperthreading
 ![image](https://user-images.githubusercontent.com/2216970/135067136-aa5fba98-974e-4423-b3fc-11a2e1016d9e.png) | Hiding stalls with Multi-Threading
 
