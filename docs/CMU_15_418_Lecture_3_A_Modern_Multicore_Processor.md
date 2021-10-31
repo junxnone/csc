@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-10-31T04:59:13Z`
+Update Date | `2021-10-31T05:12:27Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
@@ -32,6 +32,10 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ### SIMD Conditional execution
 - 当执行代码段存在条件判断时，不同的分支执行不同的指令, 会有一部分时间浪费掉
+- SSE -> AVX -> AVX512
+- 不好的 code 会严重影响 SIMC 效率
+  - `Instruction stream coherence` - 指令流的连续性影响 SIMD 的效率
+  - `Divergent/Divergence` - 发散执行, 指缺乏连续性
 
 ![image](https://user-images.githubusercontent.com/2216970/135046400-d7da3152-78f7-4709-8ebd-075b66209c29.png)
 
