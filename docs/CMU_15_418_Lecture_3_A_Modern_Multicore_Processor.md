@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-10-31T05:27:53Z`
+Update Date | `2021-10-31T08:27:33Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
@@ -51,23 +51,30 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 -- | --
 
 ## Memory
+
 - Latency(cycles/nsec) - `读取延迟`
 - Bandwidth (GB/s) - `读取最大速度`
-
-
-- Interleaved multi-threading
-- Memory
-
 - **Stalls:** 运行下条指令时因为依赖不能运行
+  - 内存访问是主要 Stalls
   - **Caches reduces stalls** 可以降低 memory access latency
   - **Prefetching reduces stalls:** Prefetching data into caches(prefetching 错误的话也会导致 performance 下降)
   - **Multi-Threading reduces stalls**
+- 解决方案
+  - **L1/2/3 Cache** --> DRAM: `Cache 有效减少了 内存访问时间`
+  - **Prefetching data**  动态分析程序, 预测将要使用的 data(也会存在对performance坏的影响: 占用带宽/污染缓存)
+  - **Multi-threading** 当一个线程 stall,其他线程可以继续执行
+
+
+`L12`  VS `L123 + Prefetching`
+-- |
+![image](https://user-images.githubusercontent.com/2216970/139574218-95810ae5-dbb5-4720-ac9a-73cf17f31b03.png)
+Interleaved multi-threading
+![image](https://user-images.githubusercontent.com/2216970/135067136-aa5fba98-974e-4423-b3fc-11a2e1016d9e.png)
+
 
 
 > prefetching, multi-threading is a latency hiding, not a latency reducing technique
 
 
 
-Hyperthreading
-![image](https://user-images.githubusercontent.com/2216970/135067136-aa5fba98-974e-4423-b3fc-11a2e1016d9e.png) | Hiding stalls with Multi-Threading
 
