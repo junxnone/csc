@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-10-31T08:27:33Z`
+Update Date | `2021-10-31T08:28:00Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
@@ -65,10 +65,10 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
   - **Multi-threading** 当一个线程 stall,其他线程可以继续执行
 
 
-`L12`  VS `L123 + Prefetching`
--- |
+**`L12`  VS `L123 + Prefetching`**
+:--: |
 ![image](https://user-images.githubusercontent.com/2216970/139574218-95810ae5-dbb5-4720-ac9a-73cf17f31b03.png)
-Interleaved multi-threading
+**Interleaved multi-threading**
 ![image](https://user-images.githubusercontent.com/2216970/135067136-aa5fba98-974e-4423-b3fc-11a2e1016d9e.png)
 
 
