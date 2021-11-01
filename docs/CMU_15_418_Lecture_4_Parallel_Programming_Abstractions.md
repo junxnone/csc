@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T09:43:25Z`
+Update Date | `2021-11-01T09:55:50Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -38,7 +38,6 @@ Interleaved assignment | Blocked assignment
 ![image](https://user-images.githubusercontent.com/2216970/139636184-b9f009df-3e2e-44cb-b332-5db7c652fcfb.png) | ![image](https://user-images.githubusercontent.com/2216970/139636199-72654d6e-ef42-4560-86b9-8b8d085966d3.png)
 
 
-![image](https://user-images.githubusercontent.com/2216970/135419585-ea69d459-36ed-407a-8d73-575261c74bb1.png) 
 
 ## Programming models
 - Thread Programming model
@@ -57,12 +56,12 @@ ISPC Programming model | ![image](https://user-images.githubusercontent.com/2216
   - **Message passing**: 发送/接收消息
   - **Data parallel**
 
-#### Shared address space Model
+#### Shared Address Space Model
 
 Shared address space | ![image](https://user-images.githubusercontent.com/2216970/135246760-0cde6b4e-dc3b-49f7-bab6-f4600bdf43d3.png) 
 -- | --
 **SMP** HW Implementation | ![image](https://user-images.githubusercontent.com/2216970/135250232-2b4e42d2-d82b-4d38-97e2-93e295cf7b17.png) 
-NUMA HW Implementation | ![image](https://user-images.githubusercontent.com/2216970/139651287-47c6f557-cfa4-4039-b0b1-0d1dd8b6d0e0.png)
+**NUMA** HW Implementation | ![image](https://user-images.githubusercontent.com/2216970/139651287-47c6f557-cfa4-4039-b0b1-0d1dd8b6d0e0.png)
 
 HW Arch |  Description
 -- | --
@@ -76,13 +75,19 @@ NUMA | - 每个处理器拥有自己的Memory<br>- 每个处理器可以通过 `
   - Hyper-transport - AMD
   - QuickPath (QPI) - Intel
 
-#### Message passing Model
+#### Message Passing Model
 - MPI - `Message Passing Interface`
+- 通常用于机器集群
 
 Message passing | ![image](https://user-images.githubusercontent.com/2216970/135251375-cccae0d5-6229-4656-bbee-648ab29acc8a.png) 
 
 
-Data Parallel | 
+#### Data Parallel Model
+- SIMD
+- Vector Processors
+- SPMD Programming
 
+
+![image](https://user-images.githubusercontent.com/2216970/135419585-ea69d459-36ed-407a-8d73-575261c74bb1.png) 
 
 
