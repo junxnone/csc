@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T09:56:45Z`
+Update Date | `2021-11-01T11:03:12Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -49,12 +49,16 @@ Thread Programming model |  ![image](https://user-images.githubusercontent.com/2
 ISPC Programming model | ![image](https://user-images.githubusercontent.com/2216970/135245974-87a9145c-45ff-452d-8f3b-4d80875f9e23.png)
 
 
-### Communication models
+- 按照通信方式可以分为三种模型
+- 实际使用中会混合使用编程模型 `Shared Address Space` + `Message Passing`
 
-- 三种通信方式
-  - **Shared address space**: 共享变量
-  - **Message passing**: 发送/接收消息
-  - **Data parallel**
+Model | Description
+-- | --
+**Shared address space** | - 共享变量<br> 非结构化数据<br> - 主动性更强？？
+**Message passing** | - 发送/接收消息<br> - 结构化数据
+**Data parallel** | - SIMD Vector Processor<br>- 通信受 iterations 限制
+
+
 
 #### Shared Address Space Model
 
@@ -84,13 +88,27 @@ Message passing | ![image](https://user-images.githubusercontent.com/2216970/135
 
 
 #### Data Parallel Model
-- SIMD
-- Vector Processors
+- 一个函数处理大量的数据
+- HW  support - Vector Processors -  SIMD
 - SPMD Programming
-
+- Stream Programming
+- Languages - ISPC/OpenCL/CUDA
 
 ISPC-> SPMD/SIMD | ![image](https://user-images.githubusercontent.com/2216970/135419585-ea69d459-36ed-407a-8d73-575261c74bb1.png) 
 -- | --
+
+
+#### Stream Programming
+- Streams - Data
+- Kernels - 处理函数 
+- Gather/Scatter
+
+
+Streams Programming | Description
+-- | --
+Benefits | - 函数独立<br>- data 已知, prefetching 优势<br>- Cache 优势, 可以减少读写 Memory
+Drawbacks | Need library of operators to describe complex data flows ???
+
 
 
 
