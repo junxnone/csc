@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T09:56:18Z`
+Update Date | `2021-11-01T09:56:45Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -80,6 +80,7 @@ NUMA | - 每个处理器拥有自己的Memory<br>- 每个处理器可以通过 `
 - 通常用于机器集群
 
 Message passing | ![image](https://user-images.githubusercontent.com/2216970/135251375-cccae0d5-6229-4656-bbee-648ab29acc8a.png) 
+-- | --
 
 
 #### Data Parallel Model
