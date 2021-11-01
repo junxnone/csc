@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-11-01T04:02:28Z`
+Update Date | `2021-11-01T05:55:23Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
@@ -55,6 +55,9 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 ![image](https://user-images.githubusercontent.com/2216970/135067136-aa5fba98-974e-4423-b3fc-11a2e1016d9e.png)
 
 
+> prefetching, multi-threading is a latency hiding, not a latency reducing technique ？？
+
+
 ## Memory
 
 - Latency(cycles/nsec) - `读取延迟`
@@ -76,7 +79,6 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 
 
-> prefetching, multi-threading is a latency hiding, not a latency reducing technique
 
 
 
