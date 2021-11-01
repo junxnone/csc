@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T09:37:01Z`
+Update Date | `2021-11-01T09:43:25Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -54,9 +54,10 @@ ISPC Programming model | ![image](https://user-images.githubusercontent.com/2216
 
 - 三种通信方式
   - **Shared address space**: 共享变量
-  - **Message passing**
+  - **Message passing**: 发送/接收消息
   - **Data parallel**
 
+#### Shared address space Model
 
 Shared address space | ![image](https://user-images.githubusercontent.com/2216970/135246760-0cde6b4e-dc3b-49f7-bab6-f4600bdf43d3.png) 
 -- | --
@@ -69,9 +70,14 @@ SMP | - 处理器通过 Interconnect 直接访问所有处理器<br>- 对所有�
 NUMA | - 每个处理器拥有自己的Memory<br>- 每个处理器可以通过 `Interconnect` 访问其他处理器的 Memory<br>- 对本地内存的访问是 `low lantency` + `high bandwidth`
 
 
+- SMP - Symmetric(shared-memory) multi-processor
+- NUMA - Non-uniform memory access
+- Interconnect
+  - Hyper-transport - AMD
+  - QuickPath (QPI) - Intel
 
-> SMP - Symmetric(shared-memory) multi-processor
-
+#### Message passing Model
+- MPI - `Message Passing Interface`
 
 Message passing | ![image](https://user-images.githubusercontent.com/2216970/135251375-cccae0d5-6229-4656-bbee-648ab29acc8a.png) 
 
