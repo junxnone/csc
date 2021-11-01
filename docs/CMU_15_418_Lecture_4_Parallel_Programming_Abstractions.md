@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T06:53:22Z`
+Update Date | `2021-11-01T06:55:02Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -22,9 +22,9 @@ Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ## SPMD & ISPC
 - SPMD - `single program, multiple data` 
-- ISPC - `Intel SPMD Program Compiler` - 把普通的串行程序编译为 **SIMD** 程序
-  - 用于编译 `C code` 到 `SIMD implementation` - `xxx.ispc` --> `xxx.o`
-  - **Program Instance**:  
+- ISPC - `Intel SPMD Program Compiler` 
+  - 用于编译串行 `C code` 到 `SIMD implementation` 程序  - `xxx.ispc` --> `xxx.o`
+  - **Program Instance**:  同时运行的程序 `single program`
   - **gang**:  N x `Program Instance` - N 取决于 `SIMD width`
 - **ISPC supports parallelism**
   - **SPMD parallelism**: SIMD vector lanes on a single core  
