@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T09:55:50Z`
+Update Date | `2021-11-01T09:56:18Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -88,6 +88,8 @@ Message passing | ![image](https://user-images.githubusercontent.com/2216970/135
 - SPMD Programming
 
 
-![image](https://user-images.githubusercontent.com/2216970/135419585-ea69d459-36ed-407a-8d73-575261c74bb1.png) 
+ISPC-> SPMD/SIMD | ![image](https://user-images.githubusercontent.com/2216970/135419585-ea69d459-36ed-407a-8d73-575261c74bb1.png) 
+-- | --
+
 
 
