@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T08:15:55Z`
+Update Date | `2021-11-01T09:37:01Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -60,7 +60,15 @@ ISPC Programming model | ![image](https://user-images.githubusercontent.com/2216
 
 Shared address space | ![image](https://user-images.githubusercontent.com/2216970/135246760-0cde6b4e-dc3b-49f7-bab6-f4600bdf43d3.png) 
 -- | --
-HW implementation SMP | ![image](https://user-images.githubusercontent.com/2216970/135250232-2b4e42d2-d82b-4d38-97e2-93e295cf7b17.png) 
+**SMP** HW Implementation | ![image](https://user-images.githubusercontent.com/2216970/135250232-2b4e42d2-d82b-4d38-97e2-93e295cf7b17.png) 
+NUMA HW Implementation | ![image](https://user-images.githubusercontent.com/2216970/139651287-47c6f557-cfa4-4039-b0b1-0d1dd8b6d0e0.png)
+
+HW Arch |  Description
+-- | --
+SMP | - 处理器通过 Interconnect 直接访问所有处理器<br>- 对所有处理器而言, 访问 DRAM 时间相同
+NUMA | - 每个处理器拥有自己的Memory<br>- 每个处理器可以通过 `Interconnect` 访问其他处理器的 Memory<br>- 对本地内存的访问是 `low lantency` + `high bandwidth`
+
+
 
 > SMP - Symmetric(shared-memory) multi-processor
 
