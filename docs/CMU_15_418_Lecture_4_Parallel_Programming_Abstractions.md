@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T07:25:22Z`
+Update Date | `2021-11-01T07:25:59Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -32,8 +32,7 @@ Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 Interleaved assignment | Blocked assignment
 -- | --
-![image](https://user-images.githubusercontent.com/2216970/139635445-4c75c251-82e2-4ea2-bf90-b8440b465968.png) | 
- ![image](https://user-images.githubusercontent.com/2216970/139635947-6e721047-963c-405c-9337-0599eaffa91e.png)
+![image](https://user-images.githubusercontent.com/2216970/139635445-4c75c251-82e2-4ea2-bf90-b8440b465968.png) | ![image](https://user-images.githubusercontent.com/2216970/139635947-6e721047-963c-405c-9337-0599eaffa91e.png)
 ![image](https://user-images.githubusercontent.com/2216970/139635773-285ee1fc-4b74-4bc5-a9d7-7cde348a855e.png) | ![image](https://user-images.githubusercontent.com/2216970/139636004-4a7d4128-1b2b-4fbd-9887-79a27ddb725a.png)
 ![image](https://user-images.githubusercontent.com/2216970/139636184-b9f009df-3e2e-44cb-b332-5db7c652fcfb.png) | ![image](https://user-images.githubusercontent.com/2216970/139636199-72654d6e-ef42-4560-86b9-8b8d085966d3.png)
 
