@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 4 Parallel Programming Abstractions
 -- | --
 Create Date | `2021-09-29T02:00:07Z`
-Update Date | `2021-11-01T07:25:59Z`
+Update Date | `2021-11-01T07:39:37Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/7)
 
 ---
@@ -10,7 +10,7 @@ Edit link | [here](https://github.com/junxnone/csc/issues/7)
 - [ISPC](https://github.com/ispc/ispc) [[docs](https://ispc.github.io/)]
 
 # Brief
-- SPMD - `single program, multiple data`
+- SPMD - `single program, multiple data` - `Programming model`
 - ISPC - `Intel SPMD Program Compiler`
 - **Three parallel Programming models**
   - **Shared address space**
