@@ -2,7 +2,7 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-10-31T08:28:00Z`
+Update Date | `2021-11-01T04:02:28Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
@@ -40,7 +40,7 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ![image](https://user-images.githubusercontent.com/2216970/135046400-d7da3152-78f7-4709-8ebd-075b66209c29.png)
 
-## Hyperthreading
+## Hyperthreading & Interleaved multi-threading
 - Simultaneous Multi-Threading - **Hyperthreading** - 超线程
   - Single core does the work of multiple cores 
 - `in-order` 部分独立, `Out-of-Order` 部分共享
@@ -49,6 +49,11 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ![image](https://user-images.githubusercontent.com/2216970/139569166-44734064-21d2-4525-9440-e51d1101746f.png) | ![image](https://user-images.githubusercontent.com/2216970/135049677-8ba6e874-d733-4c64-8632-4a0f896f1790.png)  
 -- | --
+
+**Interleaved multi-threading**
+-- |
+![image](https://user-images.githubusercontent.com/2216970/135067136-aa5fba98-974e-4423-b3fc-11a2e1016d9e.png)
+
 
 ## Memory
 
@@ -68,8 +73,6 @@ Edit link | [here](https://github.com/junxnone/csc/issues/5)
 **`L12`  VS `L123 + Prefetching`**
 :--: |
 ![image](https://user-images.githubusercontent.com/2216970/139574218-95810ae5-dbb5-4720-ac9a-73cf17f31b03.png)
-**Interleaved multi-threading**
-![image](https://user-images.githubusercontent.com/2216970/135067136-aa5fba98-974e-4423-b3fc-11a2e1016d9e.png)
 
 
 
