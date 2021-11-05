@@ -2,3 +2,7 @@
 - 吴恩达机器学习课程
 - 吴恩达深度学习课程
 - [CMU 15-418 并行计算机架构及编程](/CMU_15_418_并行计算机架构及编程)
+  - [1 Why parallelism?](/CMU_15_418_Lecture_1_Why_parallelism)
+  - [2 Instruction-Level Parallelism](/CMU_15_418_Lecture_2_Instruction_Level_Parallelism)
+  - [3 A Modern Multicore Processor](/CMU_15_418_Lecture_3_A_Modern_Multicore_Processor)
+  - [4 Parallel Programming Abstractions](/CMU_15_418_Lecture_4_Parallel_Programming_Abstractions)
