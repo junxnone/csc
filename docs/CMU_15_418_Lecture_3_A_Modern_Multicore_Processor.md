@@ -2,11 +2,11 @@
 Title | CMU 15-418 Lecture 3 A Modern Multicore Processor
 -- | --
 Create Date | `2021-09-28T07:47:05Z`
-Update Date | `2021-11-01T05:55:23Z`
+Update Date | `2021-12-11T08:17:02Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/5)
 
 ---
-# Brief
+## Brief
 - Multi-Core
 - SIMD
 - Hyperthreading
