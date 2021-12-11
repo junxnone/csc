@@ -2,15 +2,15 @@
 Title | CMU 15-418 Lecture 1 Why parallelism
 -- | --
 Create Date | `2021-09-26T02:51:50Z`
-Update Date | `2021-10-30T04:10:50Z`
+Update Date | `2021-12-11T08:16:42Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/3)
 
 ---
-# Reference
+## Reference
 - [Microprocessor Trend Data](https://github.com/karlrupp/microprocessor-trend-data)
 
 
-# Brief
+## Brief
 - **并行计算发展史:** `多处理器的计算机` --> `云计算`
 - **处理器性能发展史**
   - 4/8/16/32 --> 64 bit
