@@ -2,11 +2,11 @@
 Title | CMU 15-418 Lecture 2 Instruction-Level Parallelism
 -- | --
 Create Date | `2021-09-26T03:27:07Z`
-Update Date | `2021-10-30T07:20:22Z`
+Update Date | `2021-12-11T08:16:54Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/4)
 
 ---
-# Brief
+## Brief
 - 多样的处理器 CPU/GPU/FPGA/VPU/...
 - 不同处理器的并行方法
 - ILP
