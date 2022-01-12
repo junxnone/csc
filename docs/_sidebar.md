@@ -1,3 +1,4 @@
+- [统计学习方法-李航](/统计学习方法)
 - [CS231n 计算机视觉-李飞飞](/CS231n_计算机视觉)
 - [吴恩达机器学习课程](/吴恩达机器学习课程)
 - [吴恩达深度学习课程](吴恩达深度学习课程)
@@ -7,3 +8,4 @@
   - [3 A Modern Multicore Processor](/CMU_15_418_Lecture_3_A_Modern_Multicore_Processor)
   - [4 Parallel Programming Abstractions](/CMU_15_418_Lecture_4_Parallel_Programming_Abstractions)
 - [CS329P Practical Machine Learning](/CS329P_Practical_Machine_Learning)
+
