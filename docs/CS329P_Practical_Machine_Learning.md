@@ -2,7 +2,7 @@
 Title | CS329P Practical Machine Learning
 -- | --
 Create Date | `2021-09-29T02:49:39Z`
-Update Date | `2022-01-11T09:41:05Z`
+Update Date | `2022-01-12T08:07:40Z`
 Edit link | [here](https://github.com/junxnone/csc/issues/17)
 
 ---
@@ -11,24 +11,24 @@ Edit link | [here](https://github.com/junxnone/csc/issues/17)
 
 ## Lectures
 
-- [ ] 1. **Data I** Logistics, course introduction, data acquisition
-- [ ] 2. **Data II** Web scraping, data labeling, exploratory data analysis
-- [ ] 3. **Data III** Data cleaning, data transformation, feature engineering, data summary
-- [ ] 4. **ML model recap I** ML overview, tree methods, linear methods
-- [ ] 5. **ML model recap II** Neural networks
-- [ ] 6. **Model Validation** Evaluation metrics, underfitting and overfitting, model validation
-- [ ] 7. **Model Combination** Bias and variance, bagging, boosting, stacking
-- [ ] 8. **Covariate Shift** Generalization performance recap, covariate shift
-- [ ] 9. **Covariate Shift II** Covariate shift with more math, adversarial data and invariants
-- [ ] 10. **Label Shift** Two sample test, label shift
-- [ ] 11. **Data beyond IID** Independence tests, sequence models , graphs
-- [ ] 12. **Model Tuning** Model tuning, HPO algorithms, NAS algorithms
-- [ ] 13. **Deep Network Tuning** Batch and layer norms, residual connections, attention
-- [ ] 14. **Transfer Learning** Fine-tuning for CV, fine tuning for NLP, prompt-based learning
-- [ ] 15. **Model Compression** Pruning and quantization, knowledge distillation
-- [ ] 16. **Multimodal data** Multimodal data
-- [ ] 17. **Fairness** Examples, law, risk distributions, criterias , in practice
-- [ ] 18. **Explainability** Explainability, strategies , conditioning and backdoors, axiomatic approaches, heuristics
+- [ ] 1 **Data I** Logistics, course introduction, data acquisition
+- [ ] 2 **Data II** Web scraping, data labeling, exploratory data analysis
+- [ ] 3 **Data III** Data cleaning, data transformation, feature engineering, data summary
+- [ ] 4 **ML model recap I** ML overview, tree methods, linear methods
+- [ ] 5 **ML model recap II** Neural networks
+- [ ] 6 **Model Validation** Evaluation metrics, underfitting and overfitting, model validation
+- [ ] 7 **Model Combination** Bias and variance, bagging, boosting, stacking
+- [ ] 8 **Covariate Shift** Generalization performance recap, covariate shift
+- [ ] 9 **Covariate Shift II** Covariate shift with more math, adversarial data and invariants
+- [ ] 10 **Label Shift** Two sample test, label shift
+- [ ] 11 **Data beyond IID** Independence tests, sequence models , graphs
+- [ ] 12 **Model Tuning** Model tuning, HPO algorithms, NAS algorithms
+- [ ] 13 **Deep Network Tuning** Batch and layer norms, residual connections, attention
+- [ ] 14 **Transfer Learning** Fine-tuning for CV, fine tuning for NLP, prompt-based learning
+- [ ] 15 **Model Compression** Pruning and quantization, knowledge distillation
+- [ ] 16 **Multimodal data** Multimodal data
+- [ ] 17 **Fairness** Examples, law, risk distributions, criterias , in practice
+- [ ] 18 **Explainability** Explainability, strategies , conditioning and backdoors, axiomatic approaches, heuristics
 
 
 
