@@ -8,4 +8,4 @@
   - [3 A Modern Multicore Processor](/CMU_15_418_Lecture_3_A_Modern_Multicore_Processor)
   - [4 Parallel Programming Abstractions](/CMU_15_418_Lecture_4_Parallel_Programming_Abstractions)
 - [CS329P Practical Machine Learning](/CS329P_Practical_Machine_Learning)
-
+- [北邮计算机视觉](/北邮计算机视觉)
