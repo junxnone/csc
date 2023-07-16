@@ -1,0 +1,114 @@
+-----
+
+| Title     | CMU 15-418 Lecture 4 Parallel Programming Abstractions |
+| --------- | ------------------------------------------------------ |
+| Created @ | `2021-09-29T02:00:07Z`                                 |
+| Updated @ | `2023-07-16T08:47:44Z`                                 |
+| Labels    | \`\`                                                   |
+| Edit @    | [here](https://github.com/junxnone/csc/issues/7)       |
+
+-----
+
+# CMU 15-418 Lecture 4 Parallel Programming Abstractions
+
+## Reference
+
+  - [ISPC](https://github.com/ispc/ispc)
+    \[[docs](https://ispc.github.io/)\]
+
+## Brief
+
+  - SPMD - `single program, multiple data` - `Programming model`
+  - ISPC - `Intel SPMD Program Compiler`
+  - Programming models
+  - **SMP** - `Symmetric multi-processor`
+  - **NUMA** - `Non-uniform memory access`
+
+## SPMD & ISPC
+
+  - SPMD - `single program, multiple data`
+  - ISPC - `Intel SPMD Program Compiler`
+      - 用于编译串行 `C code` 到 `SIMD implementation` 程序 - `xxx.ispc` --\>
+        `xxx.o`
+  - **Program Instance**: 同时运行的程序 `single program`
+  - **gang**: 一系列的 `Program Instance`
+      - \= N x `Program Instance` - N 取决于 `SIMD width`
+      - 用于 `one core` + SIMD
+  - **task**: 用于 multi-core
+      - 比 thread 更轻量
+  - **ISPC supports parallelism**
+      - **SPMD parallelism**: SIMD vector lanes on a single core
+      - **task parallelism**: multiple processor cores
+
+| Interleaved assignment                                       | Blocked assignment                                           |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![image](media/fb50c78c465576538c3281f081832827a9facf5c.png) | ![image](media/bbb853748d08a6aee6b581d1e5f13d8ef5877a50.png) |
+| ![image](media/1abc85f30b74b280a77fc4ed67a15ed6a49961af.png) | ![image](media/7c241275816606e9cecb69b7f906873d9c6254c2.png) |
+| ![image](media/92ee514af72f257ee6f81eaa0cdccd54fec7724d.png) | ![image](media/9fb8795d39fa53df14ab487ece969881fe07c670.png) |
+
+## Programming models
+
+  - Thread Programming model
+  - ISPC Programming model
+
+| System Layers Interface & Implementation | ![image](media/49771ea94d2bde244f89ee20c7a8525ffc2e14cd.png) |
+| ---------------------------------------- | ------------------------------------------------------------ |
+| Thread Programming model                 | ![image](media/21541037af8b4e4fc4202229c1bb50aba5502f0c.png) |
+| ISPC Programming model                   | ![image](media/773c223f3ae06729d3aa95707871dc6ffde77e4c.png) |
+
+  - 按照通信方式可以分为三种模型
+  - 实际使用中会混合使用编程模型 `Shared Address Space` + `Message Passing`
+
+| Model                    | Description                                     |
+| ------------------------ | ----------------------------------------------- |
+| **Shared address space** | \- 共享变量<br> 非结构化数据<br> - 主动性更强？？                |
+| **Message passing**      | \- 发送/接收消息<br> - 结构化数据                          |
+| **Data parallel**        | \- SIMD Vector Processor<br>- 通信受 iterations 限制 |
+
+#### Shared Address Space Model
+
+| Shared address space       | ![image](media/36daebfafaa1ad2a741ba3069881349e163f132b.png) |
+| -------------------------- | ------------------------------------------------------------ |
+| **SMP** HW Implementation  | ![image](media/6c25af460df655024e1a7e292e3568b93b197eac.png) |
+| **NUMA** HW Implementation | ![image](media/e71d7c0b046f4015f524dc499d23d7989113fad8.png) |
+
+| HW Arch | Description                                                                                                        |
+| ------- | ------------------------------------------------------------------------------------------------------------------ |
+| SMP     | \- 处理器通过 Interconnect 直接访问所有处理器<br>- 对所有处理器而言, 访问 DRAM 时间相同                                                        |
+| NUMA    | \- 每个处理器拥有自己的Memory<br>- 每个处理器可以通过 `Interconnect` 访问其他处理器的 Memory<br>- 对本地内存的访问是 `low lantency` + `high bandwidth` |
+
+  - SMP - Symmetric(shared-memory) multi-processor
+  - NUMA - Non-uniform memory access
+  - Interconnect
+      - Hyper-transport - AMD
+      - QuickPath (QPI) - Intel
+
+#### Message Passing Model
+
+  - MPI - `Message Passing Interface`
+  - 通常用于机器集群
+
+| Message passing | ![image](media/5d975c1b057bbf70b0068a4d0fc7a3e9111a02bb.png) |
+| --------------- | ------------------------------------------------------------ |
+
+#### Data Parallel Model
+
+  - 一个函数处理大量的数据
+  - HW support - Vector Processors - SIMD
+  - SPMD Programming
+  - Stream Programming
+  - Languages - ISPC/OpenCL/CUDA
+
+| ISPC-\> SPMD/SIMD | ![image](media/dfc4425386ecca5ada60efee934ed1e9a41fe8a3.png) |
+| ----------------- | ------------------------------------------------------------ |
+
+#### Stream Programming
+
+  - Streams - Data
+  - Kernels - 处理函数
+  - Gather/Scatter
+
+| Streams Programming | Description                                                       |
+| ------------------- | ----------------------------------------------------------------- |
+| Benefits            | \- 函数独立<br>- data 已知, prefetching 优势<br>- Cache 优势, 可以减少读写 Memory |
+| Drawbacks           | Need library of operators to describe complex data flows ???      |
