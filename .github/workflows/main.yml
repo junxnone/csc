@@ -1,12 +1,15 @@
-name: generate template wiki
+name: sync issues to markdown
 on:
   issues:
     types: [opened, edited, labeled]
 jobs:
-  run:
+  issue2md:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: print github event action
+        run: |
+          echo "${{ github.event.action }}"
       - uses: junxnone/wiki_issue2md@main
         with:
           branch: "main" # default to main
@@ -14,9 +17,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           created_at: ${{ github.event.issue.created_at }}
           updated_at: ${{ github.event.issue.updated_at }}
-          label_name: ${{ github.event.label.name }}
+          label_name: ${{ join(github.event.issue.labels.*.name, ', ') }}
           title: ${{ github.event.issue.title }}
           body: ${{ github.event.issue.body }}
           number: ${{ github.event.issue.number }}
           actor: ${{ github.actor }}
           nohead: ${{ contains(github.event.issue.labels.*.name, 'nohead') }}
+  update_sidebar:
+    uses: ./.github/workflows/update_sidebar.yml
+    needs: issue2md
