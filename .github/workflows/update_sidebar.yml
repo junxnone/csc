@@ -11,7 +11,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: junxnone/autosidebar@dev
+      - uses: junxnone/autosidebar@main
         with:
           push_branch: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
