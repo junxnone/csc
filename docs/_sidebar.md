@@ -1,5 +1,5 @@
 - [CMU 15-418 并行计算机架构及编程](/0002_PCAP15418)
-  - [CMU 15-418 Lecture 1 Why parallelism?](/0003_PCAP15418_1)
+  - [1 Why parallelism?](/0003_PCAP15418_1)
   - [CMU 15-418 Lecture 2 Instruction-Level Parallelism](/0004_PCAP15418_2)
   - [CMU 15-418 Lecture 3 A Modern Multicore Processor](/0005_PCAP15418_3)
   - [CMU 15-418 Lecture 4 Parallel Programming Abstractions](/0007_PCAP15418_4)
@@ -21,4 +21,4 @@
 - [Wiki History](/hist)
 
 ---
-<kbd><sub>@1028480130</sub></kbd>
+<kbd><sub>@1030460130</sub></kbd>
