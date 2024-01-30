@@ -1,8 +1,8 @@
 - [CMU 15-418 并行计算机架构及编程](/0002_PCAP15418)
   - [1 Why parallelism?](/0003_PCAP15418_1)
-  - [CMU 15-418 Lecture 2 Instruction-Level Parallelism](/0004_PCAP15418_2)
-  - [CMU 15-418 Lecture 3 A Modern Multicore Processor](/0005_PCAP15418_3)
-  - [CMU 15-418 Lecture 4 Parallel Programming Abstractions](/0007_PCAP15418_4)
+  - [2 Instruction-Level Parallelism](/0004_PCAP15418_2)
+  - [3 A Modern Multicore Processor](/0005_PCAP15418_3)
+  - [4 Parallel Programming Abstractions](/0007_PCAP15418_4)
 - [CS229 吴恩达机器学习课程](/0010_CS229)
   - [1 绪论](/0012_CS229_1)
   - [2 单变量线性回归](/0013_CS229_2)
@@ -21,4 +21,4 @@
 - [Wiki History](/hist)
 
 ---
-<kbd><sub>@1030460130</sub></kbd>
+<kbd><sub>@1031040130</sub></kbd>
