@@ -13,7 +13,7 @@
   - [CS231n 计算机视觉 李飞飞](/0016_CS231n_计算机视觉)
 - [程序性能优化理论与方法](/0021_OPT)
 - [Practical Machine Learning](/0017_PMLCS329P)
-  - [5](/0008_PMLCS329P_5)
+  - [5 Parallel Programming Basics](/0008_PMLCS329P_5)
 - [About](/about)
 - update
   - [log](/update_log)
@@ -21,4 +21,4 @@
 - [Wiki History](/hist)
 
 ---
-<kbd><sub>@1031040130</sub></kbd>
+<kbd><sub>@1031270130</sub></kbd>
