@@ -2,12 +2,12 @@
 Title | OPT WHY
 -- | --
 Created @ | `2024-04-21T06:31:41Z`
-Updated @| `2024-04-21T06:45:38Z`
+Updated @| `2024-04-21T06:46:11Z`
 Labels | ``
 Edit @| [here](https://github.com/junxnone/csc/issues/23)
 
 ---
-#  程序性能优化的意义
+#  1 程序性能优化的意义
 
 - 计算系统(处理器架构/存储器)的发展渐缓，性能提升难度变大(受限于主频/存储器读写速度)
 
