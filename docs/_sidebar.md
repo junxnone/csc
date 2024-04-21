@@ -12,7 +12,7 @@
 - [CS231n 计算机视觉 李飞飞](/0016_CS231n)
   - [CS231n 计算机视觉 李飞飞](/0016_CS231n_计算机视觉)
 - [程序性能优化理论与方法](/0021_OPT)
-  - [程序性能优化的意义](/0023_OPT_WHY)
+  - [1 程序性能优化的意义](/0023_OPT_WHY)
 - [Practical Machine Learning](/0017_PMLCS329P)
   - [5 Parallel Programming Basics](/0008_PMLCS329P_5)
 - [About](/about)
@@ -22,4 +22,4 @@
 - [Wiki History](/hist)
 
 ---
-<kbd><sub>@1446290421</sub></kbd>
+<kbd><sub>@1446530421</sub></kbd>
