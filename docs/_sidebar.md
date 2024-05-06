@@ -11,15 +11,13 @@
 - [CS230 吴恩达深度学习课程](/0011_CS230)
 - [CS231n 计算机视觉 李飞飞](/0016_CS231n)
   - [CS231n 计算机视觉 李飞飞](/0016_CS231n_计算机视觉)
+- [大语言模型](/0024_LLM)
 - [程序性能优化理论与方法](/0021_OPT)
   - [1 程序性能优化的意义](/0023_OPT_WHY)
 - [Practical Machine Learning](/0017_PMLCS329P)
   - [5 Parallel Programming Basics](/0008_PMLCS329P_5)
-- [About](/about)
-- update
-  - [log](/update_log)
 - [CS230 吴恩达深度学习课程](/0011_吴恩达深度学习课程)
 - [Wiki History](/hist)
 
 ---
-<kbd><sub>@1610100505</sub></kbd>
+<kbd><sub>@1543370506</sub></kbd>
