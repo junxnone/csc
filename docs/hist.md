@@ -9,14 +9,14 @@
 - 2021-09-29&nbsp;&nbsp; [4 Parallel Programming Abstractions](/0007_PCAP15418_4)&nbsp;&nbsp; :bookmark:PCAP15418 :bookmark:4
 - 2021-09-28&nbsp;&nbsp; [3 A Modern Multicore Processor](/0005_PCAP15418_3)&nbsp;&nbsp; :bookmark:PCAP15418 :bookmark:3
 - 2021-09-26&nbsp;&nbsp; [1 Why parallelism?](/0003_PCAP15418_1)&nbsp;&nbsp; :bookmark:PCAP15418 :bookmark:1
-- 2021-09-26&nbsp;&nbsp; [2 Instruction-Level Parallelism](/0004_PCAP15418_2)&nbsp;&nbsp; :bookmark:PCAP15418 :bookmark:2
 - 2021-09-26&nbsp;&nbsp; [CMU 15-418 并行计算机架构及编程](/0002_PCAP15418)&nbsp;&nbsp; :bookmark:PCAP15418
-- 2019-07-18&nbsp;&nbsp; [4 多变量线性回归](/0015_CS229_4)&nbsp;&nbsp; :bookmark:CS229 :bookmark:4
-- 2019-07-18&nbsp;&nbsp; [CS230 吴恩达深度学习课程](/0011_吴恩达深度学习课程)&nbsp;&nbsp; :bookmark:吴恩达深度学习课程
-- 2019-07-18&nbsp;&nbsp; [CS229 吴恩达机器学习课程](/0010_CS229)&nbsp;&nbsp; :bookmark:CS229
+- 2021-09-26&nbsp;&nbsp; [2 Instruction-Level Parallelism](/0004_PCAP15418_2)&nbsp;&nbsp; :bookmark:PCAP15418 :bookmark:2
 - 2019-07-18&nbsp;&nbsp; [CS230 吴恩达深度学习课程](/0011_CS230)&nbsp;&nbsp; :bookmark:CS230
-- 2019-07-18&nbsp;&nbsp; [1 绪论](/0012_CS229_1)&nbsp;&nbsp; :bookmark:CS229 :bookmark:1
 - 2019-07-18&nbsp;&nbsp; [3 多变量线性回归](/0014_CS229_3)&nbsp;&nbsp; :bookmark:CS229 :bookmark:3
 - 2019-07-18&nbsp;&nbsp; [2 单变量线性回归](/0013_CS229_2)&nbsp;&nbsp; :bookmark:CS229 :bookmark:2
-- 2018-10-12&nbsp;&nbsp; [CS231n 计算机视觉 李飞飞](/0016_CS231n)&nbsp;&nbsp; :bookmark:CS231n
+- 2019-07-18&nbsp;&nbsp; [1 绪论](/0012_CS229_1)&nbsp;&nbsp; :bookmark:CS229 :bookmark:1
+- 2019-07-18&nbsp;&nbsp; [CS229 吴恩达机器学习课程](/0010_CS229)&nbsp;&nbsp; :bookmark:CS229
+- 2019-07-18&nbsp;&nbsp; [CS230 吴恩达深度学习课程](/0011_吴恩达深度学习课程)&nbsp;&nbsp; :bookmark:吴恩达深度学习课程
+- 2019-07-18&nbsp;&nbsp; [4 多变量线性回归](/0015_CS229_4)&nbsp;&nbsp; :bookmark:CS229 :bookmark:4
 - 2018-10-12&nbsp;&nbsp; [CS231n 计算机视觉 李飞飞](/0016_CS231n_计算机视觉)&nbsp;&nbsp; :bookmark:CS231n :bookmark:计算机视觉
+- 2018-10-12&nbsp;&nbsp; [CS231n 计算机视觉 李飞飞](/0016_CS231n)&nbsp;&nbsp; :bookmark:CS231n
